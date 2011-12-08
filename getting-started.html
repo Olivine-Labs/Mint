@@ -3,16 +3,42 @@ layout: default
 title: Getting Started | Mint
 ---
 <div class="row">
-  <div class="span16">
+  <section class="span10">
     <h1>Getting Started</h1>
 
-    <ul>
-      <li>Set up apache
-      <li>Set up PHP
-      <li>Set up MongoDB
-      <li>Download Mint
-      <li>Include in project
-      <li>Where to add handlers, etc
-    </ul>
+    <p>
+      We're going to go through the following steps. Step 1 is based on our own
+      hosting scheme, but you're welcome to use anything you're comfortable
+      with. This assumes some basic knowledge of bash, Linux, and Git, although
+      we'll keep it simple and detailed.
+    </p>
+
+    <ol>
+      <li><a href="#step-1">Set up EC2 with Apache and PHP</a>
+      <li><a href="#step-2">Set up MongoDB</a>
+      <li><a href="#step-3">Download Mint</a>
+      <li><a href="#step-4">Including Mint Core in Your Project</a>
+      <li><a href="#step-5">Writing Your Own Code</a>
+    </ol>
+
+    <a name="step-1"></a>
+    <h2>Set up EC2 with Apache and PHP</h2>
+  </section>
+
+  <div class="span6">
+    <aside class="sidebar">
+      <div class="well">
+        <h2>Explanation of Setup</h2>
+
+        <p>
+          These instructions are based on what we found to be easeiest to work
+          with. You may very well find it better to use a different hosting
+          provider, or nginx instead of apache, or a different database
+          solution; Mint doesn't have any restrictions, that's up to you. We
+          set up defaults that accomodate rapid, modern development and allow
+          you to change out modules externally to the Mint core systems.
+        </p>
+      </div>
+    </aside>
   </div>
 </div>
