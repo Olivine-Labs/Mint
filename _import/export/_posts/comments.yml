@@ -1,0 +1,651 @@
+--- !ruby/object:Comment 
+author_email: jclawson06@hotmail.com
+author_name: Jack lawson
+author_url: http://www.thejacklawson.com
+content: |
+  I'll look around at what's available (relatively new to the blog platform I'm using); you can definitely hit the RSS feed at <a href="http://www.thejacklawson.com/atom.xml." rel="nofollow">http://www.thejacklawson.com/atom.xml.</a>
+
+created_at: 2008-12-16 13:17:04 -08:00
+post_id: "12"
+post_title: Flex Dynamic External Stylesheets
+
+--- !ruby/object:Comment 
+author_email: kaintukeebob@gmail.com
+author_name: Jeff Chambers
+author_url: http://www.crimsondeviations.com/blog/epicfail
+content: |
+  Monkeypatching has a best?
+
+created_at: 2008-08-27 07:17:17 -07:00
+post_id: "21"
+post_title: Javascript Prototyping, an Adventure
+
+--- !ruby/object:Comment 
+author_email: john.taylor.ca@gmail.com
+author_name: JT
+author_url: ""
+content: Thank you for posting this. It was just what I was looking for. At the risk of looking a gift horse in the mouth; you might want to reconsider the colors used to display your code. Red and blue are very hard to read against the background.
+created_at: 2009-07-10 10:07:47 -07:00
+post_id: "357"
+post_title: ASP.NET DataPaging Control with Data Sources Set in the Codebehind (Including LINQ)
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: You're welcome! And yes, you're absolutely right. I wrote this page back when I had a white background; I'll update it ASAP.
+created_at: 2009-07-10 13:56:16 -07:00
+post_id: "357"
+post_title: ASP.NET DataPaging Control with Data Sources Set in the Codebehind (Including LINQ)
+
+--- !ruby/object:Comment 
+author_email: AndrewR73@gmail.com
+author_name: Andrew Raastad
+author_url: http://www.PinalLodge30.com/
+content: This saved me in ways I cannot begin to explain.  As they say, it's always the little things that get ya.  With your help I was able to get my site's Guestbook back under control and keep my hair firmly attached to my head.  Thanks much!!
+created_at: 2009-09-05 15:15:20 -07:00
+post_id: "357"
+post_title: ASP.NET DataPaging Control with Data Sources Set in the Codebehind (Including LINQ)
+
+--- !ruby/object:Comment 
+author_email: wycats@gmail.com
+author_name: Yehuda Katz
+author_url: http://www.yehudakatz.com
+content: Glad you liked the book! Feel free to ping if you have any questions!
+created_at: 2009-01-17 14:15:45 -08:00
+post_id: "34"
+post_title: Bookshelf
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: |-
+  <a href="#comment-36" rel="nofollow">@Yehuda Katz</a> 
+  Thanks! I'll be moving into some of the JSON stuff soon, to implement in the next version of my online game (Neflaria; it's had the same code since 2001 so it's in desperate need of an upgrade). We're rearchitecting the PHP to use OO patterns, and I haven't worked with JSON much before, so I may take you up on that.
+created_at: 2009-01-18 17:21:35 -08:00
+post_id: "34"
+post_title: Bookshelf
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: The Art Of War
+author_url: http://www.athenianarts.com/#respond
+content: |-
+  <strong>The Art Of War...</strong>
+  
+  ...You might want to take a look at...
+created_at: 2010-01-11 16:36:41 -08:00
+post_id: "34"
+post_title: Bookshelf
+
+--- !ruby/object:Comment 
+author_email: lqdice187@yahoo.com
+author_name: gb
+author_url: ""
+content: I understand where the original post was coming from. CSS can be difficult and it is not truly intuitive. It can be improved a lot and it will with time. You do make good points as well but I think the main thing to keep in mind is not to tag CSS vs Tables but rather what are the appropriate times to use each.
+created_at: 2009-02-03 05:17:56 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: I agree; tables are great, for tabular data. I'm not saying to never use tables, but rather, to never use tables for designing anything you'll have to maintain in the future.
+created_at: 2009-02-03 07:00:18 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: florin@bytenotes.com
+author_name: florin
+author_url: ""
+content: |-
+  Doing CSS layout should be as simple that a 12 year old could do it.
+  
+  CSS for layout is trash because I have three children, mortgage, responsibilities, chores, friends and still more. 
+  
+  CSS for layout is trash because it cots too much to get it done as opposed to what it could've been. 
+  
+  CSS for layout should be followed buy a universal revolt. You think I'm such a fool as to waste my precious time in this short life to fix some hacks that a committee spewed out? Indeed, CSS for layout is the result of collective ignorance of what people's lives is worth. Yes, when you steal my time, I take it personal.
+  
+  Yes, I do have to display stuff in the browser. Thank you very much, I enjoy my job.
+  
+  Go hack away at your leisure. You must be an adolescent who gets obsessed over some shadows on your page design. 
+  
+  Get a life. CSS for layout has become a personal issue.
+created_at: 2009-02-03 17:50:46 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: florin@bytenotes.com
+author_name: florin
+author_url: ""
+content: |-
+  Here's the best illustration of CSS layout, taken from your twitter post:
+  
+  "Finally home.. only took 2 hours for what normally takes 25 minutes."
+created_at: 2009-02-03 17:53:46 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: RawThinkTankc@gmail.com
+author_name: RawThinkTank
+author_url: ""
+content: If GWT uses CSS when it compiles Java to JS, i bet they can save lot of coding hassles and JS size. i mean they should focus on CSS with regard to the JS compiler, that means their API should be CSS centric.
+created_at: 2009-02-03 18:10:44 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: |-
+  <a href="#comment-47" rel="nofollow">@florin</a> 
+  Indeed it appears to have become a personal issue. I'll reiterate the point that if you know how to use CSS, it's not hard. It doesn't take up time. It doesn't cost too much if you know how to utilize the tools you're given. To somebody who doesn't understand how to use the technology, tables make sense.
+  
+  However, I believe that just because something's hard, you shouldn't give up on it. An accessible, liquid design, to me, is more important than churning out a design using tables. I learned this lesson the hard way recently; I decided to take a shortcut on a design I had been working on. Then, after it was all done, the designer made several changes to how the content boxes fit into each page. And, now I was back at square one. However, had I used CSS and done it the right way, it may have taken 50% longer, but that means I would have also saved time, not having to do it twice; it's much easier to change CSS, once it's finished.
+  
+  If you never have to maintain the design.. sure, use tables. But that's hardly the case, and it's a slippery slope.
+  
+  And I am obsessed about "the shadows on my page design", because what I deliver to my client should be the best I can possibly do, and nothing less. I refuse to offer anything other than my best.
+created_at: 2009-02-03 20:07:40 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: tgautier@gmail.com
+author_name: Taylor Gautier
+author_url: ""
+content: You don't get it.   It shouldn't be hard.  That's what is wrong with CSS for layout.
+created_at: 2009-02-03 22:22:47 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: piotr@zalewa.info
+author_name: zalun
+author_url: http://pitr.zalewa.info
+content: |-
+  CSS is not hard. Believe me. Just read few old articles from A List Apart and everything comes clear. I love separating the content and design. It is simple. Certainly there are things I'd like to have (like :odd selector), but usually Javascript comes quite handy.
+  
+  Don't get me wrong - I came through the table design (I started in '96) I still use it for HTML emails. The moment you realise the power of CSS is when you start to use a changeable content. There are things which are simply impossible without using 3 or more nested tables - that looks horrible. In CSS it is just another logical DOM Element (like ul or div). 
+  
+  Try to read your table designed page in Fangs - you may feel like a blind person - table information is an important part content, div is layout.
+  
+  Give it a try - build something simple, avoid hacks, test in Firefox with Firebug, check in IE/Safari evry half an hour. If it is something new it'll not be simple from the beginning.
+  
+  Shouw some courage people
+created_at: 2009-02-04 00:07:31 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: prem@songbirdtech.com
+author_name: philip
+author_url: ""
+content: CSS is not just hard. It is also inconsistent. Using it just because it is the *right* thing to do makes about as much sense as using a razor to trim eye lashes - that is, it is possible, but why try it when there are far easier ways of getting stuff done. This religious zeal for CSS makes no sense.
+created_at: 2009-02-04 10:36:22 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: Michael.Reid@paradise.net.nz
+author_name: Moa
+author_url: ""
+content: |-
+  CSS is good for certain types of layout (eg. web pages, like duh) but is terrible for traditional types of layout (eg. dynamic application type interfaces). That is why web applications (even the most sophisticated Google ones) still fall so far short of any complex application out there. 
+  
+  After wrestling with CSS to try and get my moderately complex GWT working right (the Java is easy, the CSS is horrid) I abandoned it and went to a WebStart application where I could use all the power of Swing's layout managers (once you spend the hour required to master GridBagLayout you realise how poor CSS is in comparison). Sure I could get the CSS to work correctly and possibly layout correctly but the tool/debugging support (Firebug) is second rate compared to rich-client equivalents. IMHO CSS is ok if all you're doing is simple stuff (which is why it's defenders see no problems) but it (and it's tool environment) just isn't good enough to push webapps to the next level.
+created_at: 2010-01-30 18:20:16 -08:00
+post_id: "38"
+post_title: "Re: \"Why CSS should not be used for layout\""
+
+--- !ruby/object:Comment 
+author_email: jure@zemanta.com
+author_name: Jure Cuhalev
+author_url: http://www.jurecuhalev.com/blog
+content: |-
+  Thanks for spreading the word about Zemanta :) Let me know if there's anything we should change or develop to help you with your blogging. Btw, I've also added your blog to Zemanta's related articles recommendations.
+  
+  Jure Cuhalev, Zemanta
+  jure@zemanta.com
+created_at: 2009-04-30 16:15:32 -07:00
+post_id: "74"
+post_title: Zemanta is Awesome
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: |-
+  Jure-
+  
+  You're welcome! It is an awesome tool, so I'm glad I could tell someone about it. If I think of anything, I'll certainly let you know; and thanks for adding me to the list.
+created_at: 2009-05-01 05:50:32 -07:00
+post_id: "74"
+post_title: Zemanta is Awesome
+
+--- !ruby/object:Comment 
+author_email: a@a.com
+author_name: anonymous
+author_url: ""
+content: |-
+  Jack,
+  Flash is not only still needed, but in many ways better than jquery.  Flash gets rendered as vector graphics, so the image quality is the same at any scale and resolution.  If I have a demo looping on a monitor at a trade show, for example, it sure as hell won't be in JQuery.  Most ActionScript will be less lines of code than JQuery also.
+  
+  Jquery is convenient and nice for most usages, but doesn't replace flash.
+  
+  PS this is Jason, of TimeManager fame.
+created_at: 2009-05-21 21:43:55 -07:00
+post_id: "76"
+post_title: The Death of Flash
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: |-
+  Jason-
+  
+  jQuery can handle SVG in modern browsers (of course, that's me assuming you're using a modern browser); and I agree - for looping demos and movies, that's where Flash reigns. Perhaps "Flash is Dead" was a bad title; maybe it should be "Flash is being reduced to what it was designed for". And I've done absolutely amazing things in one or two lines of jQuery - and that compiled flash file is most likely going to be a much larger filesize than jQuery (which may already be cached if we're pulling from Google's servers) plus whatever code I wrote.
+  
+  And awesome... how's it going? I owe pretty much everything I have today to TimeManager's code and working (the tiny bit I did) with .NET, so thanks (bit understated though a "thanks" may be).
+created_at: 2009-05-22 13:22:45 -07:00
+post_id: "76"
+post_title: The Death of Flash
+
+--- !ruby/object:Comment 
+author_email: firefox@chrome.com
+author_name: Firefox
+author_url: http://www.getfirefox.com
+content: |-
+  Just FYI: You do realize the reason Chrome is faster is precisely because it doesn't have extensions right? Compare an extensionless Firefox to Chrome. Same speed.
+  
+  If you want the speed you can't also have the extensions. Pick and choose. Just thought you might like to know.
+  
+  Also, 8 seconds? Jesus what do you have installed. Mine loads in about 4, with a dozen extensions.
+created_at: 2009-08-20 12:03:09 -07:00
+post_id: "96"
+post_title: A Switch to Chrome (Mostly)
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: It's more than just the extensions. The extensions do add some overhead, but even on a clean system- my Windows 7 installation, for example, with no plugins yet- there's still a huge difference. I don't think it's quite as black and white as "extensions cause all speed issues".
+created_at: 2009-08-20 21:11:56 -07:00
+post_id: "96"
+post_title: A Switch to Chrome (Mostly)
+
+--- !ruby/object:Comment 
+author_email: sherry.mathew93@gmail.com
+author_name: sherry
+author_url: ""
+content: i am using Google chrome for more than a year the reason to switch  to google chrome is that it is better tha the internet explore in a way that it store information n light to use...i often use to download my <a href="http://www.aplusexams.com" rel="nofollow">a  training</a> files so it automatically store in my directed folder...
+created_at: 2009-09-13 22:10:04 -07:00
+post_id: "96"
+post_title: A Switch to Chrome (Mostly)
+
+--- !ruby/object:Comment 
+author_email: marco.borsoi@gmail.com
+author_name: Marco Borsoi
+author_url: ""
+content: |-
+  Hi Jack! Thanks for the post!
+  
+  I have an UpdatePanel with a DataPager control inside. Should I put the "RegisterClientScriptBlock" code into the Page_Load or shoul I put it into the DataPager event?
+created_at: 2010-10-13 07:31:18 -07:00
+post_id: "102"
+post_title: Tracking AJAX in ASP.NET with Google Analytics
+
+--- !ruby/object:Comment 
+author_email: shannon.patterson@gmail.com
+author_name: Shannon Patterson
+author_url: http://www.strangely-normal.com
+content: you're right, it is a beautiful thing.  Thanks for the tip
+created_at: 2009-09-25 03:25:40 -07:00
+post_id: "104"
+post_title: Google PageSpeed, a Beautiful Thing
+
+--- !ruby/object:Comment 
+author_email: curt@curthubbard.com
+author_name: Curt
+author_url: http://www.hyperlightdevelopment.com
+content: While JQuery does support the same browsers, it doesn't mean they've done the proper testing. I do think the upgrade is worth it, simply for the speed improvements.
+created_at: 2010-01-16 09:13:26 -08:00
+post_id: "161"
+post_title: jQuery 1.4 Released! (Let's have an end-to-end testing party)
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: This is correct; any framework, especially a brand new release, could have bugs. They do have a suite of tests that they run, though (if you want to watch a video, check out http://video.stoimen.com/2009/12/14/john-resig-author-of-jquery-js-library-speaks-about-testing-and-performance-analysis/) on all of the browsers to test.
+created_at: 2010-01-16 09:16:21 -08:00
+post_id: "161"
+post_title: jQuery 1.4 Released! (Let's have an end-to-end testing party)
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: My Return To Chrome Has Been A Pleasant Surprise &laquo; NetWorks! Boise Valley by Sales Results
+author_url: http://networksboise.wordpress.com/2010/03/31/my-return-to-chrome-has-been-a-pleasant-surprise/
+content: "[...] A Switch to Chrome (Mostly): A Followup (thejacklawson.com)       Categories: Tech Tips &amp; Random Quips Tags: Add new tag, Firefox, Google Chrome       Comments (0) Trackbacks (0) Leave a comment Trackback [...] "
+created_at: 2010-03-31 10:14:23 -07:00
+post_id: "197"
+post_title: "A Switch to Chrome (Mostly): A Followup"
+
+--- !ruby/object:Comment 
+author_email: andrew82788@yahoo.com
+author_name: Swiftzilla
+author_url: ""
+content: Hey, glad to hear you are still working on it lol, cant wait for the outcome
+created_at: 2010-05-20 19:53:01 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: CRB_Boy@hotmail.com
+author_name: Mystic
+author_url: http://www.immoral-attack.com/referral.php3?ref=206
+content: While you're all waiting for the new version to come out you may want to check out this other game I play at. Similar type of game concept. Enjoy!
+created_at: 2010-06-02 21:29:02 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: Mercadorofshimlar@hotmail.com
+author_name: Mercador
+author_url: ""
+content: |-
+  Well, Jacky-boy, I hope you get it up before I go off to boot camp, I miss you guys. Its too bad that as soon as I found time to play, the next week the game was brought down. I'm willing to make financial contributions at the beginning of next year, if necessary.
+  
+  Pick up your phone, you monkey.
+  
+  Catch you later, hopefully.
+created_at: 2010-06-08 12:47:02 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: coconut_juice69@hotmail.com
+author_name: Weezy
+author_url: ""
+content: Pfffft.
+created_at: 2010-06-10 08:37:03 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: winkelman.erwin@gmail.com
+author_name: CadaVez
+author_url: ""
+content: Any updates ?
+created_at: 2010-06-26 13:41:07 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: Working on it! I've been overloaded with projects, but we are making progress.
+created_at: 2010-06-26 19:03:06 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: molske@gmail.com
+author_name: Pounce
+author_url: ""
+content: |-
+  Preview not working =(
+  
+  Looking forward to these new technologies integrated in one of the coolest games I ever played (and I played a lot of them ;-) )
+created_at: 2010-07-04 00:24:59 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: poppo989@hotmail.com
+author_name: Poppo
+author_url: ""
+content: Lets hope it's fun like the rest, i'll be playing if everything goes right.
+created_at: 2010-07-05 04:23:42 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: steinman_@hotmail.com
+author_name: Majere
+author_url: ""
+content: Ahem, that message is missing one very important detail. When will this new version be finished? And I wish I knew what all of that meant lol but I'm stoked for fast clicking.
+created_at: 2010-08-31 20:40:39 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: rwkgod@gmail.com
+author_name: Josh McCord (RWKGOD)
+author_url: ""
+content: |-
+  DOOD JQUERY ROX MY SOX!
+  
+  and get on msn?
+created_at: 2010-10-07 12:22:17 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: aurora_shimlar@hotmail.com
+author_name: Cynamyn Grl
+author_url: ""
+content: When I clicked on the go here to see link I was told it's no longer there.  Where did i go and What can I see?
+created_at: 2011-01-03 14:31:23 -08:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: chris_hutchinson86@yahoo.com
+author_name: Enchanted Werewolf
+author_url: ""
+content: Any thing happening with nef2?
+created_at: 2011-06-23 09:50:54 -07:00
+post_id: "200"
+post_title: "Neflaria V2: HTML 5, jQuery 1.4.1"
+
+--- !ruby/object:Comment 
+author_email: eric.wroolie@overpass.co.uk
+author_name: Eric Wroolie
+author_url: http://www.wroolie.co.uk
+content: |-
+  Jack I completely agree with you.  I was having this conversation with someone a few weeks ago.  
+  
+  My big problem with ASP.Net is that it abstracts the idea that ultimately you are just sending html to the browser.  I've had so many developers tell me that they can't do something because they don't know how to do it in a gridview.  
+  
+  I use ASP.Net all the time.  I love the idea of data binding.  I love using C#-- it feels natural.
+  
+  But I hate the Page_Load event.  I hate post-backs.  I hate controls that render html I have no control over.  Most of the controls hardly seem necessary.  You could easily use basic HTML (although controls like the calendar control and wizard control are very cool).
+  
+  PHP is closer to the HTML (like classic ASP was).  You know what's going to the browser.  But PHP is an ugly language.  It doesn't compile.  The object-orientation feels like it was cobbled together at the last minute ($variable=&gt;"foo").  
+  
+  I really like the way they move away from all this with the MVC framework.  No code behind pages and few controls.
+created_at: 2010-02-14 21:34:28 -08:00
+post_id: "204"
+post_title: ASP.NET Controls, How I Hate Them
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: |-
+  @Eric Wroolie:
+  
+  Thanks, Eric- we're definitely in agreement. Page_Load, postbacks, no control over html... but the temptation for easy controls exists (though they come back to bite you later.) And that's my predicament: PHP is definitely a very ugly language. So my choice is between bloated complexity vs. ease of use... have to lesser of two evils based on the project.
+  
+  I'm working on a few MVC projects to get more familiar with the framework; it looks like it's the magic solvent. I hope it is, anyway.
+created_at: 2010-02-16 08:20:41 -08:00
+post_id: "204"
+post_title: ASP.NET Controls, How I Hate Them
+
+--- !ruby/object:Comment 
+author_email: jhon.barreiro@gmail.com
+author_name: Jhon Barreiro
+author_url: ""
+content: Definitely, Definitely, I share your HATE over asp.net controls. I also do use pure HTML as much as possible and I try NOT to use thos .Net server controls simply because the are ugly!
+created_at: 2010-04-15 01:35:38 -07:00
+post_id: "204"
+post_title: ASP.NET Controls, How I Hate Them
+
+--- !ruby/object:Comment 
+author_email: mikethecoder@dvol.com
+author_name: Mike
+author_url: ""
+content: Couldn't agree more... finally had to learn .Net for a specific project and not liking it at all. I love C# but the asp.net glue is terrible. I can't stand how it makes javascript more difficult with unpredictable control output and ID issues. Also I hate when it comes time to use css and I need to view my rendered source and reverse engineer the markup to style it. And evvverything is outputted in tables... even when you make a datalist and set templates, each item is still wrapped in a table row so if you wanted to template a datalist as a simple ordered list (OL) then by itself it cant be done without more work. Also the learning process seems more involved and also useless... I'm memorizing random property names for marking up control displays which is knowledge useless to me in any other areas of development. Why do I need to remember a control has a Direction property with accepted values of lefttoright or righttoleft which ultimately just adds a style="text-align:center" to the control.... a complete waste of memory. Also I do see the advantages of changing style properties programatically but it just feels wrong since the whole point of css was to separate presentation from structure and now we're tying it together with the application layer. Hopefully my last .net website project.
+created_at: 2010-12-25 09:49:07 -08:00
+post_id: "204"
+post_title: ASP.NET Controls, How I Hate Them
+
+--- !ruby/object:Comment 
+author_email: mikethecoder@dvol.com
+author_name: Mike
+author_url: ""
+content: Ohh yeah one last thing I forgot... tutorials and support. It is IMPOSSIBLE to find any good tutorials on asp.net. First off the results are always diluted because of vb.net vs c# etc and then the multiple ways of doing the same things (objectdatasource, sqldatasources, databinding etc). And there is almost no community support for it at all. Searching for help with simple controls results in pages of mostly garage that doesnt apply or a bunch of tutorials that look like they used to be hosted on geocities. Finding good help is nearly impossible.
+created_at: 2010-12-25 09:52:03 -08:00
+post_id: "204"
+post_title: ASP.NET Controls, How I Hate Them
+
+--- !ruby/object:Comment 
+author_email: andrew@aksel.com
+author_name: Andrew
+author_url: http://akselsoft.blogspot.com
+content: Part 2 isn't available - keeps on coming back and says "Not present on site"
+created_at: 2010-07-14 06:33:14 -07:00
+post_id: "230"
+post_title: "HTML5 Site \xE2\x80\x93 Waterford Family Bowl (Part 3 of n)"
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: That's weird.. I republished it with a different link and now it works. Strange. I'll update this post; the link on the main page should work now, as well.<a href="http://www.thejacklawson.com/index.php/2010/04/html5-site-wfb-site-ui-design-html-structure-part-2-of-n/" rel="nofollow"> Part 2</a>
+created_at: 2010-07-21 07:37:52 -07:00
+post_id: "230"
+post_title: "HTML5 Site \xE2\x80\x93 Waterford Family Bowl (Part 3 of n)"
+
+--- !ruby/object:Comment 
+author_email: requiem.bmx@live.com
+author_name: chrisss
+author_url: ""
+content: Where areee you
+created_at: 2010-07-29 12:24:16 -07:00
+post_id: "252"
+post_title: ASP.NET 4.0 Changes tl;dr
+
+--- !ruby/object:Comment 
+author_email: bh8921@gmail.com
+author_name: holdenapple
+author_url: http://Yourwebsite
+content: |-
+  it was very interesting to read www.thejacklawson.com
+  I want to quote your post in my blog. It can?
+  And you et an account on Twitter?
+created_at: 2010-07-30 17:10:28 -07:00
+post_id: "252"
+post_title: ASP.NET 4.0 Changes tl;dr
+
+--- !ruby/object:Comment 
+author_email: idesmet.work@gmail.com
+author_name: David De Smet
+author_url: http://daviddesmet.wordpress.com/
+content: I'm not able to see the screenshots and neither download the theme for VS2010... could you fix it, please? I would like to have a look at your scheme... ;)
+created_at: 2011-05-16 22:37:45 -07:00
+post_id: "297"
+post_title: "The Dark Side v2: Visual Studio 2010"
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: "I'll fix it this evening! Although, to be honest, I've actually switched to WekeRoad Ink (mostly because that's what everyone I work with uses, and that's pretty similar to what my theme is anyway.) You can find that at: http://studiostyl.es/schemes/wekeroad-ink"
+created_at: 2011-05-18 07:55:09 -07:00
+post_id: "297"
+post_title: "The Dark Side v2: Visual Studio 2010"
+
+--- !ruby/object:Comment 
+author_email: morganesque@gmail.com
+author_name: Tom Morgan
+author_url: http://morganesque.com/
+content: |-
+  Thanks for this it's exactly what I was looking for.
+  
+  I've found that in order to get page hierarchy to work in the editing screen (e.g. /about/history/ to actually cause History to appear indented beneath About) I've had to add "/index.php" to the end of the page name.
+  
+  i.e.
+  <code>
+  PerchSystem::set_page($route.'/index.php');
+  </code>
+  
+  Not totally sure why, but it seems to be something to do with the way it determines what "level" each page is at. I guess it's because it was made to work with a directory structure where those index.php files would have to exist in each dir.
+created_at: 2011-06-07 11:41:16 -07:00
+post_id: "311"
+post_title: Dynamic Pages with Perch CMS
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: Weird that you had to do that; I didn't have to add index.php, but it built all the hierarchies out correctly. What version of Perch are you using? Mine's using 1.6.5. (You can see this from Perch -> Settings -> Diagnostics Report)
+created_at: 2011-06-07 12:44:46 -07:00
+post_id: "311"
+post_title: Dynamic Pages with Perch CMS
+
+--- !ruby/object:Comment 
+author_email: polaretto@gmail.com
+author_name: polaretto
+author_url: ""
+content: Nice article and solution, but it looks more like the Strategy pattern to me... :)
+created_at: 2011-06-06 05:37:13 -07:00
+post_id: "337"
+post_title: Mediators for Modularized Asynchronous Programming in Javascript
+
+--- !ruby/object:Comment 
+author_email: jlawson@crimsondeviations.com
+author_name: Jack Lawson
+author_url: http://www.thejacklawson.com
+content: Yeah... I think there's a few different patterns this could fall into.
+created_at: 2011-06-06 12:37:25 -07:00
+post_id: "337"
+post_title: Mediators for Modularized Asynchronous Programming in Javascript
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Mediator.js v0.2 | Love Letters from Olivine Labs
+author_url: http://blog.olivinelabs.com/2011/09/mediator-js-v0-2/
+content: "[...] September 9, 2011  by  jlawson Source:\xC2\xA0https://github.com/ajacksified/Mediator.js Original post: Mediators for Modularized Asynchronous Programming in Javascript\xC2\xA0As I was reading Addy Osmani&#8217;s excellent post &#8220;Patterns For Large-Scale JavaScript [...] "
+created_at: 2011-09-09 20:53:12 -07:00
+post_id: "337"
+post_title: Mediators for Modularized Asynchronous Programming in Javascript
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Mediator.js 0.4 | Love Letters from Olivine Labs
+author_url: http://blog.olivinelabs.com/2011/09/mediator-js-0-4/
+content: "[...] During a Discussion   Mediator.js 0.4 Posted on September 15, 2011  by  jlawson (crosspost from Jack Lawson&#8217;s blog)(Skip to the jsfiddle\xC2\xA0if you&#8217;d like to see a live example)I made some changes to Mediator.js [...] "
+created_at: 2011-09-15 11:43:39 -07:00
+post_id: "410"
+post_title: Mediator.js 0.3 and 0.4
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: A Better Way &raquo; Blog Archive &raquo; Mediators for Modularized Asynchronous Programming in Javascript
+author_url: http://www.thejacklawson.com/2011/06/mediators-for-modularized-asynchronous-programming-in-javascript/
+content: "[...] | Tags: design patterns, github, Javascript, Source code | 3 Comments &#187;(jsbin / github\xC2\xA0/ latest version post)Author&#8217;s note: this probably doesn&#8217;t match the Mediator pattern *exactly*, but [...] "
+created_at: 2011-09-15 19:45:53 -07:00
+post_id: "418"
+post_title: Mediator.js 0.6.0
+

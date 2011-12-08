@@ -1,0 +1,47 @@
+---
+layout: post
+title: Mediator.js v0.2
+permalink: /2011/09/mediator-js-v0-2/index.html
+post_id: 383
+categories: 
+- design patterns
+- Development
+- Javascript
+- Mediator.js
+- Source code
+---
+
+Source: <a title="Mediator.js on Github" href="https://github.com/ajacksified/Mediator.js">https://github.com/ajacksified/Mediator.js</a>
+Original post: <a title="Mediators for Modularized Asynchronous Programming in Javascript" href="http://www.thejacklawson.com/2011/06/mediators-for-modularized-asynchronous-programming-in-javascript/">Mediators for Modularized Asynchronous Programming in Javascript </a>
+
+As I was reading Addy Osmani's excellent post "<a title="Patterns for Large-Scale Javascript Application Architecture" href="http://addyosmani.com/largescalejavascript/" target="_blank">Patterns For Large-Scale JavaScript Application Architecture</a>", I came to the realization that I had made some past changes to my own Mediator.js library, but had failed to both upload the changes to Github _and_ use some of the tricks I've picked up since originally writing the library. So, version 0.2 is out, with the following changes:
+<ul>
+	<li>API changes</li>
+<ul>
+	<li>"Subscribe" in place of "Add"</li>
+	<li>"Publish" in place of "Call"</li>
+	<li>Subscribe now takes a context object, to allow you to pass in what @this@ should be when the callback is called</li>
+</ul>
+	<li>Mediator no longer forces you to use it as a singleton</li>
+	<li>No longer looks for "type" as part of a data object; rather, uses channels to sub/pub</li>
+	<li>Code a whole lot cleaner; objects to pass around subscriber info rather than numerically-indexed arrays</li>
+	<li>Passes arguments you pass into publish onto subscriber callbacks, rather than a data object</li>
+<ul>
+	<li>Example:
+[sourcecode language="javascript"]
+var m = new Mediator();
+m.Subscribe("test", function(arg1, arg2){ console.log([arg1, arg2]); }
+m.Publish("test", "arg1", "arg2");
+// output > ["arg1", "arg2"]
+[/sourcecode]</li>
+</ul>
+	<li>Meta changes</li>
+<ul>
+	<li>Tests are now "real" tests, using Jasmine</li>
+	<li>Updated Readme file to reflect new information</li>
+	<li>Added minified js (and under 500 bytes, too)</li>
+</ul>
+</ul>
+<div>I think the main difference between this and most available and/or roll-your-own Mediators is the predicate matching, although that may also be what makes this more / different than a traditional Mediator. Mediator+? A meatier mediator? Meatiator.</div>
+<div>Anyway, <a title="Mediator Example on jsFiddle" href="http://jsfiddle.net/ajacksified/dCwaK/3/">here's an example on jsfiddle</a>. Try chatting, and using the same name for the from/to fields. Shows predicates, subscriptions, and removing subscriptions.</div>
+<div class="zemanta-pixie" style="margin-top: 10px; height: 15px;"><a class="zemanta-pixie-a" title="Enhanced by Zemanta" href="http://www.zemanta.com/"><img class="zemanta-pixie-img" style="border: none; float: right;" src="http://img.zemanta.com/zemified_e.png?x-id=3ebc45aa-9563-4637-81b0-1e86f1456c15" alt="Enhanced by Zemanta" /></a></div>

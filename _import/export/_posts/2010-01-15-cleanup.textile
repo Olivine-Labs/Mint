@@ -1,0 +1,10 @@
+---
+layout: post
+title: Cleanup
+permalink: /2010/01/cleanup/index.html
+post_id: 125
+categories: 
+- meta
+---
+
+I'm going through and cleaning up some of my old posts- especially some of the ones with code examples. They're pretty ugly at times, and it just so happens that two of the worst are the two most popular posts here (the one about <a href="http://www.thejacklawson.com/index.php/tag/datapager/">DataPagers and Listviews desynching</a>, and the one about <a href="http://www.thejacklawson.com/index.php/tag/flex-dynamic-stylesheets/">Flex External Stylesheets</a>.) Things may be rocky as I find a good syntax highlighter. It's already proven to be much more difficult than it should be.

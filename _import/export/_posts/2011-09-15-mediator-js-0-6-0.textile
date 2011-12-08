@@ -1,0 +1,32 @@
+---
+layout: post
+title: Mediator.js 0.6.0
+permalink: /2011/09/mediator-js-0-6-0/index.html
+post_id: 418
+categories: 
+- Development
+- github
+- Javascript
+- Mediator.js
+---
+
+Yeah, so, I skipped a version number again. Version 0.5.0 is a pretty hefty update, followed by 0.5.1 and 0.6.0 (which are quite a bit smaller.) Here's what's new:
+
+0.5.0
+<ul>
+	<li>Subscribers are now a real object instead of an anonymous collection of data</li>
+<ul>
+	<li>Contain a guid for an id for access later</li>
+	<li>Update function that allows you to modify its function, options, or context after adding it</li>
+</ul>
+	<li>You can change subscriber's priority (as an index with the other subscribers within your channel), so if you want one to fire _first_, you can do so either as an option on Subscribe or later using Mediator.SetPriority(id/fn, <channelname>). Channelname makes this run significantly faster, but is not required.</li>
+</ul>
+<div>0.6.0</div>
+<div>
+<ul>
+	<li>Channel is returned at the end of the data arguments for callbacks. Within a callback function, you can run channel.StopPropagation() to stop further subscribers from being notified.</li>
+</ul>
+</div>
+<div>There's probably a significant amount of cleanup left to do on it, but I think it's fairly fully-featured, and it's unit tested pretty solidly.</div>
+<div>The latest is <a title="Mediator.js code hosted on Github" href="https://github.com/ajacksified/Mediator.js" target="_blank">up on Github</a> with an updated readme file that explains how to use everything.</div>
+<div class="zemanta-pixie" style="margin-top: 10px; height: 15px;"><a class="zemanta-pixie-a" title="Enhanced by Zemanta" href="http://www.zemanta.com/"><img class="zemanta-pixie-img" style="border: none; float: right;" src="http://img.zemanta.com/zemified_e.png?x-id=5345fad4-b1d6-46bb-8114-454dec205cd0" alt="Enhanced by Zemanta" /></a></div>
