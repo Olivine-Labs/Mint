@@ -46,6 +46,7 @@ abstract class Collection extends \Database\Collections\Collection
       if($property === self::FIELD_ID)
       {
         $property = 'Id';
+        $value = "$value";
       }
       else if(is_object($value))
       {
