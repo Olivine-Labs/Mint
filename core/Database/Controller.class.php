@@ -15,7 +15,7 @@ class Controller extends \Classes\Singleton
 
   protected function __construct()
   {
-    include './Config/Database.config.php';
+    include CONFIG_DIR.'Database.config.php';
   }
 
   protected function addCollection($settings)

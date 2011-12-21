@@ -18,7 +18,7 @@ final class Context extends \Classes\Singleton
 
     protected function __init()
     {
-      include './Config/Context.config.php';
+      include CONFIG_DIR.'Context.config.php';
     }
 
     public function HasChildren()

@@ -182,7 +182,7 @@ class Log
   }
 }
 
-include('./Config/Log.config.php');
+include(CONFIG_DIR.'Log.config.php');
 Log::$ErrorTemplate  = $TemplateFile;
 Log::$File           = $LogFile;
 
