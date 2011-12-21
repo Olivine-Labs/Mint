@@ -53,7 +53,7 @@ abstract class AuthenticationHandler extends \Router\Handler
   {
     $user->LoggedIn = true;
     $this->_currentUser = $user;
-    $this->_context->CurrentUser = (array)$user;
+    $this->_context->CurrentUser = $user;
   }
 }
 ?>
