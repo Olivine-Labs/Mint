@@ -5,9 +5,5 @@ $this->CurrentUser->Profile = (object)$this->CurrentUser->Profile;
 $this->CurrentUser->LoggedIn = ($this->CurrentUser->UserName)?true:false;
 $this->CWD = getcwd();
 
-$this->Debug = false;
-if(file_exists('../../config/Context.config.php'))
-{
-  include('../../config/Context.config.php');
-}
+$this->Debug = true;
 ?>
