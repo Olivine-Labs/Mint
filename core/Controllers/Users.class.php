@@ -34,8 +34,10 @@ class Users
     $aSession	= \Classes\SessionHandler::getSession();
 
     if(array_key_exists(\Models\Session::FIELD_USER, $aSession->Data))
+    {
+      $_SESSION = array();
       unset($aSession->Data[\Models\Session::FIELD_USER]);
-
+    }
     return true;
   }
 
