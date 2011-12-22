@@ -29,7 +29,7 @@ class SessionHandler
     $aSession->SessionId = $sessionId;
     \Database\Controller::getInstance()->Sessions->LoadBySessionId($aSession);
     self::$_session = $aSession;
-    $aSession->Data = array_merge($_SESSION, $aSession->Data);
+    $_SESSION = $aSession->Data;
     return self::$_session->Data;
   }
 
