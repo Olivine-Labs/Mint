@@ -49,6 +49,7 @@ class Users
     $Password = $user->Password;
     $user->Password = \Common\hash($user->Password);
     $user->Token = uniqid('', true);
+    $user->UserId = uniqid('', true);
     if($aDatabase->Users->Save($user))
     {
       if($login)
@@ -114,7 +115,7 @@ class Users
     return false;
   }
 
-  public static function GetByToken($token)
+  public static function GetByToken($token, $userId)
   {
     $aDatabase		= \Database\Controller::getInstance();
 
@@ -122,6 +123,7 @@ class Users
     {
       $user = new \Models\User();
       $user->Token = $token;
+      $user->UserId = $userId;
       if($aDatabase->Users->LoadByToken($user))
       {
         return $user;

@@ -16,6 +16,7 @@ class User extends Model
   public    $Profile    = null;
   public    $Score      = null;
   public    $Token      = null;
+  public    $UserId      = null;
 
   public function __construct()
   {

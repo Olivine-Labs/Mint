@@ -17,6 +17,7 @@ class UserCollection extends Collection implements \Database\Collections\UserInt
   const FIELD_PROFILE   = 'Profile';
   const FIELD_SCORE     = 'Score';
   const FIELD_TOKEN     = 'Token';
+  const FIELD_USERID    = 'UserId';
 
   protected function fill(\Models\Model $model, $array)
   {
@@ -60,7 +61,8 @@ class UserCollection extends Collection implements \Database\Collections\UserInt
   public function LoadByToken(\Models\User $user)
   {
     $data = $this->Collection->findOne(array(
-      self::FIELD_TOKEN			=> $user->Token
+      self::FIELD_TOKEN			=> $user->Token,
+      self::FIELD_USERID			=> $user->UserId
     ));
     if($data)
     {

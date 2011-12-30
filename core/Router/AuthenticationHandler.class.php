@@ -15,7 +15,7 @@ abstract class AuthenticationHandler extends \Router\Handler
   {
     if(array_key_exists('_token', $this->_request))
     {
-      $user = \Controllers\Users::GetByToken($this->_request['_token']);
+      $user = \Controllers\Users::GetByToken(trim($this->_request['_token']),trim($this->_request['_userid']));
       if($user !== null)
       {
         return true;
@@ -37,7 +37,7 @@ abstract class AuthenticationHandler extends \Router\Handler
     {
       if(array_key_exists('_token', $this->_request))
       {
-        $this::setCurrentContextUser(\Controllers\Users::GetByToken(trim($this->_request['_token'])));
+        $this::setCurrentContextUser(\Controllers\Users::GetByToken(trim($this->_request['_token']),trim($this->_request['_userid'])));
       }
       else
       {

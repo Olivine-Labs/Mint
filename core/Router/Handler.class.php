@@ -23,7 +23,7 @@ abstract class Handler
     $session = \Classes\SessionHandler::getSession();
 
     if(!array_key_exists(\Models\Session::FIELD_USER, $session->Data) && array_key_exists("token", $this->_request)){
-      $user = \Controllers\Users::GetByToken($this->_request['_token']);
+      $user = \Controllers\Users::GetByToken(trim($this->_request['_token']),trim($this->_request['_userid']));
 
       if($user !== null)
       {
