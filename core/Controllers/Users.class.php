@@ -145,8 +145,8 @@ class Users
 
       if($database->Users->Load($tempUser))
       {
-        $user->Token = uniqid('', true);
-        $user->UserId = uniqid('', true);
+        $tempUser->Token = uniqid('', true);
+        $tempUser->UserId = uniqid('', true);
 
         if($database->Users->Save($tempUser)){
           $session->Data[\Models\Session::FIELD_USER] = (array)$tempUser;
