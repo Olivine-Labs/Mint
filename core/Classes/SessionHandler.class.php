@@ -29,14 +29,12 @@ class SessionHandler
     $aSession->SessionId = $sessionId;
     \Database\Controller::getInstance()->Sessions->LoadBySessionId($aSession);
     self::$_session = $aSession;
-    $_SESSION = $aSession->Data;
     return self::$_session->Data;
   }
 
   public static function Write($sessionId, $data)
   {
     $aSession = self::$_session;
-    $aSession->Data = array_merge($_SESSION, $aSession->Data);
     return \Database\Controller::getInstance()->Sessions->Save(self::$_session);
   }
 

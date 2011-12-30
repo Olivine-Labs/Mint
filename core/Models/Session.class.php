@@ -11,7 +11,7 @@ class Session extends Model
 {
   const		FIELD_USER		= 'User';
   public    $SessionId= null;
-  public		$Data			= array();
+  public		$Data			= null;
 
   public    $LastAccess = 0;
 
@@ -19,6 +19,7 @@ class Session extends Model
   {
     parent::__construct();
     $this->LastAccess = time();
+    $this->Data = &$_SESSION;
   }
 }
 ?>
