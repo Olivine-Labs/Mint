@@ -131,5 +131,32 @@ class Users
     }
     return null;
   }
+
+  public static function GenerateToken($user)
+  {
+    $tempUser = new \Models\User();
+    $tempUser->Id = $user->Id;
+
+    $session = \Classes\SessionHandler::getSession();
+
+    if(array_key_exists(\Models\Session::FIELD_USER, $session->Data))
+    {
+      $database = \Database\Controller::getInstance();
+
+      if($database->Users->Load($tempUser))
+      {
+        $user->Token = uniqid('', true);
+        $user->UserId = uniqid('', true);
+
+        if($database->Users->Save($tempUser)){
+          $session->Data[\Models\Session::FIELD_USER] = (array)$tempUser;
+
+          return true;
+        }
+      }
+    }
+
+    return false;
+  }
 }
 ?>
