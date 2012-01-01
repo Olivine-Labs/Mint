@@ -62,15 +62,13 @@ class Controller
   private static function getTemplateExt()
   {
     self::fillTypes();
-    $ext = '.mustache';
-    if(array_key_exists('CONTENT_TYPE', $_SERVER))
-    {
-      $temp = explode('/', $_SERVER['CONTENT_TYPE']);
-      if(is_array($temp))
-        $temp = end($temp);
-      if(!in_array($temp, self::$_htmlTypes))
-        $ext = '.php';
-    }
+    $ext = '.php';
+
+    $temp = self::getContentType();
+
+    if(in_array($temp, self::$_htmlTypes))
+      $ext = '.mustache';
+
     return $ext;
   }
 
