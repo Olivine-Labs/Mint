@@ -74,6 +74,7 @@ class Users
         return $user;
       }
     }else if($user->Email){
+      $user->Email = strtolower($user->Email);
       if($aDatabase->Users->LoadByEmail($user))
       {
         return $user;
