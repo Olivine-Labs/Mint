@@ -65,7 +65,7 @@ class Users
 
   public static function View(\Models\User $user)
   {
-    $aDatabase		= \Database\Controller::getInstance();
+    $aDatabase = \Database\Controller::getInstance();
     $user->Domain  = \Common\GetSubDomain();
 
     if($user->UserName){
@@ -84,7 +84,7 @@ class Users
       {
         return $user;
       }
-    }    
+    }
 
     return false;
   }
@@ -102,9 +102,11 @@ class Users
 
       if($database->Users->Load($tempUser))
       {
+
         $tempUser->Email = $user->Email;
-        $tempUser->Password = \Common\hash($user->Password);
+        $tempUser->Password = $user->Password;
         $tempUser->UserName = $user->UserName;
+        $tempUser->Authentications = $tempUser->Authentications;
 
         if($database->Users->Save($tempUser)){
           $session->Data[\Models\Session::FIELD_USER] = (array)$tempUser;
