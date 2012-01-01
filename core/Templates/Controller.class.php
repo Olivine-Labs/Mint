@@ -24,6 +24,7 @@ class Controller
     if(!self::$_htmlTypes)
     {
       self::$_htmlTypes[] = 'x-www-form-urlencoded';
+      self::$_htmlTypes[] = 'html';
     }
   }
 
@@ -36,27 +37,20 @@ class Controller
     if(self::$_contentType !== null)
       return self::$_contentType;
 
-    if(array_key_exists('CONTENT_TYPE', $_SERVER))
+    if(array_key_exists('CONTENT_TYPE', $_SERVER) && $_SERVER['CONTENT_TYPE'])
     {
-      if($_SERVER['CONTENT_TYPE'])
-      {
-        $temp = explode('/', $_SERVER['CONTENT_TYPE']);
-        if(is_array($temp))
-          $temp = end($temp);
-        if(in_array($temp, self::$_htmlTypes))
-          return 'html';
-        else
-          return $temp;
-      }
-      else
-      {
+      $temp = explode('/', $_SERVER['CONTENT_TYPE']);
+
+      if(is_array($temp))
+        $temp = end($temp);
+
+      if(in_array($temp, self::$_htmlTypes))
         return 'html';
-      }
+
+      return $temp;
     }
-    else
-    {
-      return 'html';
-    }
+
+    return 'html';
   }
 
   private static function getTemplateExt()
@@ -158,3 +152,4 @@ class Controller
   }
 }
 ?>
+
