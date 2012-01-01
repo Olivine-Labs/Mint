@@ -104,6 +104,7 @@ class Users
       {
         $tempUser->Email = $user->Email;
         $tempUser->Password = \Common\hash($user->Password);
+        $tempUser->UserName = $user->UserName;
 
         if($database->Users->Save($tempUser)){
           $session->Data[\Models\Session::FIELD_USER] = (array)$tempUser;
