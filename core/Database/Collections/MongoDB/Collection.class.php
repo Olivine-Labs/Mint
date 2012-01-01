@@ -101,7 +101,7 @@ abstract class Collection extends \Database\Collections\Collection
     try
     {
       $array = $this->toArray($model);
-      $this->Collection->save($array);
+      $this->Collection->save($array, array('safe'=>true));
       if($returnId)
         $model->Id = $array[self::FIELD_ID];
     }
