@@ -31,7 +31,7 @@ class Controller extends \Classes\Singleton
   {
     $handler = null;
 
-    while(!file_exists($handler = $path.$file) && $path != '/')
+    while(!file_exists($handler = $path.$file) && $path != './')
     {
       $path = dirname($path).'/';
     }
