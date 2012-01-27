@@ -106,7 +106,6 @@ class Users
         $tempUser->Email = $user->Email;
         $tempUser->Password = $user->Password;
         $tempUser->UserName = $user->UserName;
-        $tempUser->Authentications = $tempUser->Authentications;
 
         if($database->Users->Save($tempUser)){
           $session->Data[\Models\Session::FIELD_USER] = (array)$tempUser;
