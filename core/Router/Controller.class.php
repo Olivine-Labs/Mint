@@ -31,12 +31,12 @@ class Controller extends \Classes\Singleton
   {
     $handler = null;
 
-    while(!file_exists($handler = $path.$file) && $path != './')
+    while(!file_exists($handler = $path.$file) && $path != MINT_ROOT)
     {
       $path = dirname($path).'/';
     }
 
-    if($path == '.')
+    if($path == MINT_ROOT)
       $handler = null;
 
     return $handler;
