@@ -45,7 +45,7 @@ class SessionHandler
 
   public static function GC($maxLifeTime)
   {
-    \Database\Controller::getInstance()->Sessions->Cleanup();
+    \Database\Controller::getInstance()->Sessions->Cleanup($maxLifeTime);
     return true;
   }
 
