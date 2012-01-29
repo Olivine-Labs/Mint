@@ -28,7 +28,7 @@ class Controller
     }
   }
 
-  private static function getContentType()
+  public static function getContentType()
   {
     self::fillTypes();
     if(array_key_exists('_type', $_REQUEST))
@@ -53,7 +53,7 @@ class Controller
     return 'html';
   }
 
-  private static function getTemplateExt()
+  public static function getTemplateExt()
   {
     self::fillTypes();
     $ext = '.php';
@@ -66,7 +66,7 @@ class Controller
     return $ext;
   }
 
-  private static function render($file, $renderer = null, $context = null)
+  public static function render($file, $renderer = null, $context = null)
   {
     if(self::getTemplateExt() == '.php')
     {
