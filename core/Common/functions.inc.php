@@ -45,6 +45,8 @@ function UriToArray(&$Uri)
 {
   $pathArray = explode('/', $Uri);
   array_shift($pathArray);
+  $tempArray = explode('?', $pathArray[count($pathArray)-1]);
+  $pathArray[count($pathArray)-1] = $tempArray[0];
   if(!end($pathArray))
     array_pop($pathArray);
   return $pathArray;
