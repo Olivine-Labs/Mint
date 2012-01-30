@@ -25,16 +25,15 @@ class SessionHandler
 
   public static function Read($sessionId)
   {
-    $aSession = new \Models\Session();
-    $aSession->SessionId = $sessionId;
-    \Database\Controller::getInstance()->Sessions->LoadBySessionId($aSession);
-    self::$_session = $aSession;
+    $session = new \Models\Session();
+    $session->SessionId = $sessionId;
+    \Database\Controller::getInstance()->Sessions->LoadBySessionId($session);
+    self::$_session = $session;
     return self::$_session->Data;
   }
 
   public static function Write($sessionId, $data)
   {
-    $aSession = self::$_session;
     return \Database\Controller::getInstance()->Sessions->Save(self::$_session);
   }
 
@@ -45,7 +44,7 @@ class SessionHandler
 
   public static function GC($maxLifeTime)
   {
-    \Database\Controller::getInstance()->Sessions->Cleanup();
+    \Database\Controller::getInstance()->Sessions->Cleanup($maxLifeTime);
     return true;
   }
 
