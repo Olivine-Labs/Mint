@@ -91,5 +91,34 @@ class UserCollection extends Collection implements \Database\Collections\UserInt
     }
     return true;
   }
+
+  public function ListBy(\Models\Search $search)
+  {
+    $fields = array();
+    $data = null;
+    $data = $this->Collection->find(array(), $fields);
+
+    if($search->SortField !== null)
+      $data = $data->sort(array($search->SortField => $search->SortDirection));
+
+    if($search->Limit != 0)
+      $data = $data->limit($search->Limit)->skip($search->Skip);
+
+    $result = array('Count'=>0, 'Items'=>array());
+
+    if($data)
+    {
+      $result['Count'] = $data->count();
+      foreach($data as $item)
+      {
+        $anItem = new \Models\Item();
+        self::fill($anItem, $item);
+        $result['Users'][] = $anItem;
+      }
+    }
+
+    return $result;
+  }
+
 }
 ?>
