@@ -1,6 +1,6 @@
 <?php
 $dir = __DIR__;
-if($str[strlen($dir)-1] != '/' && $str[strlen($dir)-1] != '\\')
+if($dir[strlen($dir)-1] != '/' && $dir[strlen($dir)-1] != '\\')
 {
   $dir .= '/';
 }
