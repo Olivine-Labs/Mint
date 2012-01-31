@@ -111,9 +111,9 @@ class UserCollection extends Collection implements \Database\Collections\UserInt
       $result['Count'] = $data->count();
       foreach($data as $item)
       {
-        $anItem = new \Models\Item();
-        self::fill($anItem, $item);
-        $result['Users'][] = $anItem;
+        $user = new \Models\User();
+        self::fill($user, $item);
+        $result['Users'][] = $user;
       }
     }
 
