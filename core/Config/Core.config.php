@@ -1,10 +1,10 @@
 <?php
-define('MINT_ROOT', realpath(dirname(__FILE__).'../../').'/');
+define('MINT_ROOT', __DIR__.'../../');
 define('AKISMET_API_KEY', '4b66e21dd53c');
 $SessionName = 'mint';
 $Timezone = 'America/New_York';
-if(file_exists('../../config/Core.config.php'))
+if(file_exists(MINT_ROOT.'../../config/Core.config.php'))
 {
-  include('../../config/Core.config.php');
+  include(MINT_ROOT.'../../config/Core.config.php');
 }
 ?>
