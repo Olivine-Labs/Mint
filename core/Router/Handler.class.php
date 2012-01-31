@@ -22,13 +22,13 @@ abstract class Handler
   {
     $session = \Classes\SessionHandler::getSession();
 
-    if(!array_key_exists(\Models\Session::FIELD_USER, $session->Data) && array_key_exists("token", $this->_request)){
+    if(!array_key_exists(\Models\Session::FIELD_USER, $session->Data) && array_key_exists("_token", $this->_request)){
       $user = \Controllers\Users::GetByToken(trim($this->_request['_token']),trim($this->_request['_userid']));
 
       if($user !== null)
       {
-        $user->LoggedIn = true;
-        $session->Data[\Models\Session::FIELD_USER] = $user;
+        $user->Password = null;
+        $session->Data[\Models\Session::FIELD_USER] = (array)$user;
       }
     }
   }
@@ -63,3 +63,4 @@ abstract class Handler
   }
 }
 ?>
+
