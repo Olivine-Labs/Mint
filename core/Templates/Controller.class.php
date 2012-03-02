@@ -11,20 +11,23 @@ class Controller
 {
   private static $_statusCode = 200;
   private static $_template = 'public/index';
-  private static $_htmlTypes = array();
+  private static $_templateTypes = array();
 
   private static $_defaultStatusCodesByVerb = array("GET" => 200, "POST" => 201, "PUT" => 200, "DELETE" => 200);
   private static $_fullStatusHeaders = array(200 => "200 OK", 201 => "201 Created", 202 => "202 Accepted", 301 => "301 Moved Permanently", 304 => "304 Not Modified", 307 => "307 Temporary Redirect", 403 => "403 Forbidden", 404 => "404 Not Found", 405 => "405 Method Not Allowed", 410 => "410 Gone", 500 => "500 Internal Server Error", 501 => "501 Not Implemented", 503 => "503 Service Unavailable");
+  private static $_outputTypeByContentType = array('x-www-form-urlencoded' => "text/html", "text/html" => "text/html", 'html' => "text/html", "json" => "application/json", "css" => "text/css", "rss" => "application/xml");
   private static $_contentType = null;
 
   public static $Renderers = array();
 
   private static function fillTypes()
   {
-    if(!self::$_htmlTypes)
+    if(!self::$_templateTypes)
     {
-      self::$_htmlTypes[] = 'x-www-form-urlencoded';
-      self::$_htmlTypes[] = 'html';
+      self::$_templateTypes[] = 'x-www-form-urlencoded';
+      self::$_templateTypes[] = 'html';
+      self::$_templateTypes[] = 'css';
+      self::$_templateTypes[] = 'rss';
     }
   }
 
@@ -44,7 +47,7 @@ class Controller
       if(is_array($temp))
         $temp = end($temp);
 
-      if(in_array($temp, self::$_htmlTypes))
+      if(in_array($temp, self::$_templateTypes))
         return 'html';
 
       return $temp;
@@ -60,7 +63,7 @@ class Controller
 
     $temp = self::getContentType();
 
-    if(in_array($temp, self::$_htmlTypes))
+    if(in_array($temp, self::$_templateTypes))
       $ext = '.mustache';
 
     return $ext;
@@ -133,6 +136,17 @@ class Controller
     self::$_contentType = $contentType;
   }
 
+  private static function getOutputType()
+  {
+    $outputType = "text/html";
+
+    if(array_key_exists(self::$_contentType, self::$_outputTypeByContentType)){
+      $outputType = self::$_outputTypeByContentType[self::$_contentType];
+    }
+
+    return $outputType;
+  }
+
   public static function Output($renderer, $context = null)
   {
     if($context === null)
@@ -142,7 +156,8 @@ class Controller
       self::$_statusCode = self::$_defaultStatusCodesByVerb[$_SERVER['REQUEST_METHOD']];
     }
 
-    header(self::$_fullStatusHeaders[self::$_statusCode]);
+    header('Status: '.self::$_fullStatusHeaders[self::$_statusCode]);
+    header('Content-type: ' . self::getOutputType());
 
     if(self::$_template !== null)
     {
@@ -152,4 +167,5 @@ class Controller
   }
 }
 ?>
+
 
