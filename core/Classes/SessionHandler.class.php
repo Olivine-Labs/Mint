@@ -27,7 +27,7 @@ class SessionHandler
   {
     $session = new \Models\Session();
     $session->SessionId = $sessionId;
-    \Database\Controller::getInstance()->Sessions->LoadBySessionId($session);
+    \Database\Controller::getInstance()->Sessions->Load($session);
     self::$_session = $session;
     return self::$_session->Data;
   }
