@@ -5,6 +5,5 @@ $this->CurrentUser->Profile = (object)$this->CurrentUser->Profile;
 $this->CurrentUser->LoggedIn = ($this->CurrentUser->UserName)?true:false;
 
 $this->Debug = true;
-if($this->Debug)
-  $this->PageStartTime = microtime(true);
+$this->PageStartTime = microtime();
 ?>

@@ -25,8 +25,7 @@ function hash($string)
 
 function Shutdown($renderer, $template, $context, $log)
 {
-  if($context->Debug)
-    $context->PageGenerationTime = microtime(true) - $context->PageStartTime;
+  $context->PageGenerationTime = microtime() - "$context->PageStartTime";
   try
   {
     if($error = error_get_last())
