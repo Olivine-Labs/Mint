@@ -11,24 +11,25 @@ abstract class Handler
 {
   protected $_context = null;
   protected $_request = null;
+  protected $_session = null;
 
   public function __construct(\Context $context, $request)
   {
     $this->_context = $context;
     $this->_request = $request;
+    $this->_session = \Classes\SessionHandler::getSession();
   }
 
   public function PreRequest()
   {
-    $session = \Classes\SessionHandler::getSession();
 
-    if(!array_key_exists(\Models\Session::FIELD_USER, $session->Data) && array_key_exists("_token", $this->_request)){
+    if(!array_key_exists(\Models\Session::FIELD_USER, $this->_session->Data) && array_key_exists("_token", $this->_request)){
       $user = \Controllers\Users::GetByToken(trim($this->_request['_token']),trim($this->_request['_userid']));
 
       if($user !== null)
       {
         $user->Password = null;
-        $session->Data[\Models\Session::FIELD_USER] = (array)$user;
+        $this->_session->Data[\Models\Session::FIELD_USER] = (array)$user;
       }
     }
   }
