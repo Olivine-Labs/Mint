@@ -94,12 +94,8 @@ class Users
 
   public static function Edit(\Models\User $user)
   {
-    $tempUser = new \Models\User();
-    $tempUser->Id = $user->Id;
-
     $database = \Database\Controller::getInstance();
-
-    return $database->Users->Save($tempUser);
+    return $database->Users->Save($user);
   }
 
   public static function GetByToken($token, $userId)
