@@ -54,6 +54,7 @@ abstract class AuthenticationHandler extends \Router\Handler
     $user->LoggedIn = true;
     $this->_currentUser = $user;
     $this->_context->CurrentUser = $user;
+    $this->_session->Data[\Models\Session::FIELD_USER] = (array)$user;
   }
 }
 ?>

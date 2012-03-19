@@ -12,9 +12,9 @@ class Users
   public static function Login(\Models\User &$user)
   {
     $aUser = new \Models\User();
-    $aUser->Email   = strtolower($user->Email);
-    $aUser->Domain  = \Common\GetSubDomain();
-    $aDatabase		  = \Database\Controller::getInstance();
+    $aUser->Email = strtolower($user->Email);
+    $aUser->Domain = \Common\GetSubDomain();
+    $aDatabase = \Database\Controller::getInstance();
     if($aDatabase->Users->LoadByEmail($aUser))
     {
       $aSession	= \Classes\SessionHandler::getSession();
@@ -31,7 +31,7 @@ class Users
 
   public static function Logout()
   {
-    $aSession	= \Classes\SessionHandler::getSession();
+    $aSession = \Classes\SessionHandler::getSession();
 
     if(array_key_exists(\Models\Session::FIELD_USER, $aSession->Data))
     {
@@ -43,7 +43,7 @@ class Users
 
   public static function Register($user, $login = true)
   {
-    $aDatabase		= \Database\Controller::getInstance();
+    $aDatabase = \Database\Controller::getInstance();
     $user->Domain = \Common\GetSubDomain();
     $user->Email = strtolower($user->Email);
     $Password = $user->Password;
@@ -68,12 +68,15 @@ class Users
     $aDatabase = \Database\Controller::getInstance();
     $user->Domain  = \Common\GetSubDomain();
 
-    if($user->UserName){
+    if($user->UserName)
+    {
       if($aDatabase->Users->LoadByName($user))
       {
         return $user;
       }
-    }else if($user->Email){
+    }
+    else if($user->Email)
+    {
       $user->Email = strtolower($user->Email);
       if($aDatabase->Users->LoadByEmail($user))
       {
@@ -94,33 +97,14 @@ class Users
     $tempUser = new \Models\User();
     $tempUser->Id = $user->Id;
 
-    $session = \Classes\SessionHandler::getSession();
+    $database = \Database\Controller::getInstance();
 
-    if(array_key_exists(\Models\Session::FIELD_USER, $session->Data))
-    {
-      $database = \Database\Controller::getInstance();
-
-      if($database->Users->Load($tempUser))
-      {
-
-        $tempUser->Email = $user->Email;
-        $tempUser->Password = $user->Password;
-        $tempUser->UserName = $user->UserName;
-
-        if($database->Users->Save($tempUser)){
-          $session->Data[\Models\Session::FIELD_USER] = (array)$tempUser;
-
-          return true;
-        }
-      }
-    } 
-
-    return false;
+    return $database->Users->Save($tempUser);
   }
 
   public static function GetByToken($token, $userId)
   {
-    $aDatabase		= \Database\Controller::getInstance();
+    $aDatabase = \Database\Controller::getInstance();
 
     if($token)
     {
