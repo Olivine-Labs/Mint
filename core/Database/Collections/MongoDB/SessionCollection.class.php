@@ -41,9 +41,7 @@ class SessionCollection extends Collection implements \Database\Collections\Sess
     try
     {
       $array = $this->toArray($model);
-      $this->Collection->save($array, array('safe'=>true));
-      if($returnId)
-        $model->Id = (string)$array[self::FIELD_ID];
+      $this->Collection->save($array);
     }
     catch(\Exception $e)
     {
