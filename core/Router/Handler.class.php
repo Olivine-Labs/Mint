@@ -60,7 +60,7 @@ abstract class Handler
 
   protected function setHTTPStatusCode($code)
   {
-    \Templates\Controller::SetHTTPStatusCode($type);
+    \Templates\Controller::SetHTTPStatusCode($code);
   }
 }
 ?>
