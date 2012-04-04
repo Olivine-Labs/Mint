@@ -42,8 +42,6 @@ abstract class AuthenticationHandler extends \Router\Handler
       else
       {
         $this->_currentUser = $this->_context->CurrentUser;
-        if($this->_currentUser->Id == "")
-          $this->_currentUser->Id = " ";
       }
     }
 
