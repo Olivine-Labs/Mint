@@ -38,9 +38,10 @@ abstract class Handler
 
   protected function redirect($url)
   {
-    header('location: '.$url);
-    \Templates\Controller::SetTemplate(null);
-    exit;
+    \Templates\Controller::SetHTTPStatusCode('302');
+    header('Location: '.$url);
+    \Templates\Controller::SetTemplate('errors/302');
+    exit();
   }
 
   protected function setTemplate($path)

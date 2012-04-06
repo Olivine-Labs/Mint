@@ -14,7 +14,7 @@ class Controller
   private static $_templateTypes = array();
 
   private static $_defaultStatusCodesByVerb = array("GET" => 200, "POST" => 201, "PUT" => 200, "DELETE" => 200);
-  private static $_fullStatusHeaders = array(200 => "200 OK", 201 => "201 Created", 202 => "202 Accepted", 301 => "301 Moved Permanently", 304 => "304 Not Modified", 307 => "307 Temporary Redirect", 403 => "403 Forbidden", 404 => "404 Not Found", 405 => "405 Method Not Allowed", 410 => "410 Gone", 500 => "500 Internal Server Error", 501 => "501 Not Implemented", 503 => "503 Service Unavailable");
+  private static $_fullStatusHeaders = array(200 => "200 OK", 201 => "201 Created", 202 => "202 Accepted", 301 => "301 Moved Permanently", 302 => "302 Found", 304 => "304 Not Modified", 307 => "307 Temporary Redirect", 401 => "401 Unauthorized", 404 => "404 Not Found", 405 => "405 Method Not Allowed", 410 => "410 Gone", 500 => "500 Internal Server Error", 501 => "501 Not Implemented", 503 => "503 Service Unavailable");
   private static $_outputTypeByContentType = array('' => 'text/html', 'x-www-form-urlencoded' => "text/html", "text/html" => "text/html", 'html' => "text/html", "json" => "application/json", "css" => "text/css", "rss" => "application/xml");
   private static $_contentType = null;
 
@@ -157,11 +157,20 @@ class Controller
     }
 
     header('Status: '.self::$_fullStatusHeaders[self::$_statusCode]);
+    header('HTTP/1.1 '.self::$_fullStatusHeaders[self::$_statusCode]);
     header('Content-type: ' . self::getOutputType());
 
     if(self::$_template !== null)
     {
-      $file = VIEW_DIR.$context->CurrentUser->Profile->Template.'/'.self::getContentType().'/'.self::$_template.self::getTemplateExt();
+      if(self::$_statusCode == 200)
+      {
+        $file = VIEW_DIR.$context->CurrentUser->Profile->Template.'/'.self::getContentType().'/'.self::$_template.self::getTemplateExt();
+      }
+      else
+      {
+        $file = VIEW_DIR.$context->CurrentUser->Profile->Template.'/'.self::getContentType().'/errors/'.self::$_statusCode.self::getTemplateExt();
+      }
+
       echo self::render($file, $renderer, $context);
     }
   }
