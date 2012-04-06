@@ -156,8 +156,6 @@ class Controller
       self::$_statusCode = self::$_defaultStatusCodesByVerb[$_SERVER['REQUEST_METHOD']];
     }
 
-    header('Status: '.self::$_fullStatusHeaders[self::$_statusCode]);
-    header('HTTP/1.1 '.self::$_fullStatusHeaders[self::$_statusCode]);
     header('Content-type: ' . self::getOutputType());
 
     if(self::$_template !== null)
@@ -168,6 +166,9 @@ class Controller
       }
       else
       {
+        header('HTTP/1.1 '.self::$_fullStatusHeaders[self::$_statusCode]);
+        header('Status: '.self::$_fullStatusHeaders[self::$_statusCode]);
+
         $file = VIEW_DIR.$context->CurrentUser->Profile->Template.'/'.self::getContentType().'/errors/'.self::$_statusCode.self::getTemplateExt();
       }
 
