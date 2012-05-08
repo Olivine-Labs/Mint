@@ -7,112 +7,190 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Alchemy Websockets : Efficient Websockets for C#</title>
-  <meta name="description" content="Mint, an open-source PHP web framework for modern web applications">
+  <title>Mint | Mint, A Fresh Web Framework</title>
+
+  <meta name="description" content="Mint, a fresh web framework built for performance and ease of use.">
+  <meta name="keywords" content="lua, web applications, web framework, mvc, REST, restful, architecture">
   <meta name="author" content="Olivine Labs, LLC <projects@olivinelabs.com>">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/prettify.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 
 <body>
+  <header class="hero-unit">
+    <div class="container">
+      <h1>Mint</h1>
+
+      <p>A fresh web framework</p>
+
+      <a class="btn" href="https://github.com/Olivine-Labs/Mint">Get it on Github</a>
+    </div>
+  </header>
 
   <div id="container">
-    <nav class="topbar">
-      <div class="fill">
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">Mint</a>
+          <a class="brand" href="#">Mint</a>
           <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li class="dropdown" data-dropdown="dropdown">
-              <a href="#" class="dropdown-toggle">Docs</a>
-              <ul class="dropdown-menu">
-                <li><a href="getting-started.html">Getting Started</a></li>
-                <li class="divider"></li>
-                <li><a href="models.html">Setting up Models</a></li>
-                <li><a href="handlers.html">Setting up Handlers</a></li>
-                <li><a href="views.html">Setting up Views</a></li>
-              </ul>
-            </li>
-            <li><a href="tutorial.html">Tutorial: SimpleForum</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="https://github.com/Olivine-Labs/Mint">Github</a></li>
             <li><a href="mailto:projects@olivinelabs.com">Contact</a></li>
+          </ul>
+          <ul class="nav pull-right github-btn">
+            <li><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=Olivine-Labs&repo=Mint&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe> </div></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div id="main" role="main" class="container">
-      <header class="hero-unit">
-  <h1>Mint</h1>
+        <section class="row">
+    <div class="span6">
+      <h2>Unmatched Speed.</h2>
 
-  <p>
-    A fresh PHP framework for modern web applications
-  </p>
+      <p>Speed, flexibility, simplicity. Pick three.</p>
 
-  <p><a class="btn primary large" href="https://github.com/Olivine-Labs/Mint">Get it on Github</a></p>
-</header>
-
-<div class="row">
-  <div class="span16">
-    <div class="download">
-      <a href="https://github.com/Olivine-Labs/Mint/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png">
-      </a>
-
-      <a href="https://github.com/Olivine-Labs/Mint/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png">
-      </a>
+      <p>
+        Mint uses the Lua language, a language whose speed blows away all other
+        scripting languages, and even many compiled languages - including Ruby,
+        Python, and Node.js. It has immeasurable flexibility, and can be used
+        with functional, object-oriented, or procedural styles. <strong>It's
+        pretty awesome.</strong>
+      </p>
     </div>
 
-    <h2>Contact</h2>
-    <p>Olivine Labs (projects@olivinelabs.com)</p>
+    <div class="span6">
+      <strong>
+        Scientific Benchmarks™ of Web Framework Performance
+      </strong>
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/Olivine-Labs/Mint/zipball/master">zip</a> or
-      <a href="https://github.com/Olivine-Labs/Mint/tarball/master">tar formats.
-    </p>
+      <p>
+        Based on 1000 page views of a file rendering using default
+        framework configurations on an Amazon EC2 Small 64-bit instance.
+      </p>
 
-    <p>
-      You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running: <pre class="prettyprint">$ git clone git://github.com/Olivine-Labs/Mint</pre>
-    </p>
-  </div>
+      <div class="progress progress-info progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 20%">Ruby on Rails</div>
+      </div>
+      <div class="progress progress-success progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 40%">Python on Whatever</div>
+      </div>
+      <div class="progress progress-warning progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 60%">PHP on Mint v1</div>
+      </div>
+      <div class="progress progress-danger progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 80%">Lua on Mint v2</div>
+      </div>
+
+      <p>
+        Recreate your own benchmarks using our 
+        <a href="https://github.com/Olivine-Labs/framework-benchmarks">benchmark repository on Github.</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="span6">
+      <h2>Development done right.</h2>
+
+      <p>
+        Mint's built for modern web applications. Built by leading front-end
+        and server-side engineers, it offers <em>just the right</em> amount of
+        help; you won't get bogged down in configuration changes or be forced
+        to learn any esoteric templating languages. By default, it ships using
+        <strong>MongoDB</strong> and <strong>Mustache templating</strong>.
+      </p>
+    </div>
+
+    <div class="span6">
+      <pre class="prettyprint lang-lua">
+function GetHome()
+  context.User = GetCurrentUser()
+  context.News = Get('News', { count: 5 })
+end
+      </pre>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="span6">
+      <h2>Scalable architecture.</h2>
+
+      <p>
+        As you build your web application, you're building a RESTful API.
+        Design and expose your models by creating database models, and expose
+        those collections as a JSON API. You consume your own API as you build
+        your pages, and can trivially use <strong>Backbone.js</strong> or any
+        client-side framework to build a javascript-driven application. It's
+        your choice; Mint makes it easy.
+      </p>
+    </div>
+
+    <div class="span6">
+      <img src="img/literally-scalability.png" alt="This is a picture of what scalability looks like." />
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="span6">
+      <h2>Getting started is easy.</h2>
+
+      <p>
+        Even if you don't know Lua, it's very easy to pick up, especially if
+        coming from a background in Javascript, Ruby, or any functional
+        language. Drop Mint in your application as a Git subtree, or download
+        the repository and plop the folder in your application's root. (We'll
+        be releasing it as a Luarocks module in the future.)
+      </p>
+    </div>
+
+    <div class="span6">
+      <strong>So easy, anyone can do it.</strong>
+      <ol>
+        <li>Make folder for project
+        <li>Download Mint
+        <li>Put Mint folder into project folder
+        <li>Start <a href="http://mongodb.org">MongoDB</a>
+        <li>Pres butan
+      </ol>
+    </div>
+  </section>
 </div>
-
 
     </div>
 
     <footer class="footer">
       <div class="container">
+        <a href="http://www.olivinelabs.com" class="ir olivine-labs">Olivine Labs</a>
         <p>
-          &copy; 2011 <a href="http://www.olivinelabs.com">Olivine Labs, LLC.</a>
+          &copy; 2012 <a href="http://www.olivinelabs.com">Olivine Labs, LLC.</a> The sourcecode aforementioned and this site is released 
+          under <a href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>  and
+          <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a> licenses.
         </p>
       </div>
     </footer>
   </div>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
-  <script defer src="js/libs/bootstrap-1.4.0.min.js"></script>
-  <script defer src="js/libs/prettify.js"></script>
-  <script defer src="js/script.js"></script>
+  <script src="js/libs/prettify.js"></script>
+  <script src="js/script.js"></script>
 
-  <script>
-    window._gaq = [['_setAccount','UA-22050912-1'],['_trackPageview'],['_trackPageLoadTime'],['_setDomainName', 'olivinelabs.com']];
+  <!--<script>
+    window._gaq = [['_setAccount','UA-22280040-1'],['_trackPageview'],['_trackPageLoadTime'],['_setDomainName', 'alchemywebsockets.net']];
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
-  </script>
+  </script>-->
 
 
   <!--[if lt IE 7 ]>
@@ -122,3 +200,4 @@
 
 </body>
 </html>
+

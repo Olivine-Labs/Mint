@@ -1,44 +1,117 @@
 ---
 layout: default
-title: Mint, A fresh PHP framework for modern web applications | Mint
+title: Mint, A Fresh Web Framework
 ---
 
-<header class="hero-unit">
-  <h1>Mint</h1>
+  <section class="row">
+    <div class="span6">
+      <h2>Unmatched Speed.</h2>
 
-  <p>
-    A fresh PHP framework for modern web applications
-  </p>
+      <p>Speed, flexibility, simplicity. Pick three.</p>
 
-  <p><a class="btn primary large" href="https://github.com/Olivine-Labs/Mint">Get it on Github</a></p>
-</header>
-
-<div class="row">
-  <div class="span16">
-    <div class="download">
-      <a href="https://github.com/Olivine-Labs/Mint/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png">
-      </a>
-
-      <a href="https://github.com/Olivine-Labs/Mint/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png">
-      </a>
+      <p>
+        Mint uses the Lua language, a language whose speed blows away all other
+        scripting languages, and even many compiled languages - including Ruby,
+        Python, and Node.js. It has immeasurable flexibility, and can be used
+        with functional, object-oriented, or procedural styles. <strong>It's
+        pretty awesome.</strong>
+      </p>
     </div>
 
-    <h2>Contact</h2>
-    <p>Olivine Labs (projects@olivinelabs.com)</p>
+    <div class="span6">
+      <strong>
+        Scientific Benchmarks™ of Web Framework Performance
+      </strong>
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/Olivine-Labs/Mint/zipball/master">zip</a> or
-      <a href="https://github.com/Olivine-Labs/Mint/tarball/master">tar formats.
-    </p>
+      <p>
+        Based on 1000 page views of a file rendering using default
+        framework configurations on an Amazon EC2 Small 64-bit instance.
+      </p>
 
-    <p>
-      You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running: <pre class="prettyprint">$ git clone git://github.com/Olivine-Labs/Mint</pre>
-    </p>
-  </div>
+      <div class="progress progress-info progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 20%">Ruby on Rails</div>
+      </div>
+      <div class="progress progress-success progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 40%">Python on Whatever</div>
+      </div>
+      <div class="progress progress-warning progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 60%">PHP on Mint v1</div>
+      </div>
+      <div class="progress progress-danger progress-striped" style="margin-bottom: 9px;">
+        <div class="bar" style="width: 80%">Lua on Mint v2</div>
+      </div>
+
+      <p>
+        Recreate your own benchmarks using our 
+        <a href="https://github.com/Olivine-Labs/framework-benchmarks">benchmark repository on Github.</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="span6">
+      <h2>Development done right.</h2>
+
+      <p>
+        Mint's built for modern web applications. Built by leading front-end
+        and server-side engineers, it offers <em>just the right</em> amount of
+        help; you won't get bogged down in configuration changes or be forced
+        to learn any esoteric templating languages. By default, it ships using
+        <strong>MongoDB</strong> and <strong>Mustache templating</strong>.
+      </p>
+    </div>
+
+    <div class="span6">
+      <pre class="prettyprint lang-lua">
+function GetHome()
+  context.User = GetCurrentUser()
+  context.News = Get('News', { count: 5 })
+end
+      </pre>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="span6">
+      <h2>Scalable architecture.</h2>
+
+      <p>
+        As you build your web application, you're building a RESTful API.
+        Design and expose your models by creating database models, and expose
+        those collections as a JSON API. You consume your own API as you build
+        your pages, and can trivially use <strong>Backbone.js</strong> or any
+        client-side framework to build a javascript-driven application. It's
+        your choice; Mint makes it easy.
+      </p>
+    </div>
+
+    <div class="span6">
+      <img src="img/literally-scalability.png" alt="This is a picture of what scalability looks like." />
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="span6">
+      <h2>Getting started is easy.</h2>
+
+      <p>
+        Even if you don't know Lua, it's very easy to pick up, especially if
+        coming from a background in Javascript, Ruby, or any functional
+        language. Drop Mint in your application as a Git subtree, or download
+        the repository and plop the folder in your application's root. (We'll
+        be releasing it as a Luarocks module in the future.)
+      </p>
+    </div>
+
+    <div class="span6">
+      <strong>So easy, anyone can do it.</strong>
+      <ol>
+        <li>Make folder for project
+        <li>Download Mint
+        <li>Put Mint folder into project folder
+        <li>Start <a href="http://mongodb.org">MongoDB</a>
+        <li>Pres butan
+      </ol>
+    </div>
+  </section>
 </div>
-
