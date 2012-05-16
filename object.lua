@@ -1,64 +1,53 @@
-local Object = {}
-
-function table.copy(table)
-  local newtable = {}
-  for key, value in pairs(table) do newtable[key] = value end
-  return newtable
-end
-
--- Class Meta Table
-Object.__meta = {}
-
-function Object.__meta.__index(table, key)
-  local super = rawget(table, 'super')
-  return super and key and super[key] or nil
-end
-
-function Object.__meta.__call(table, ...)
-  local super = rawget(table, 'super')
-  return table:__init(...) or super and super:__init(...) or nil
-end
---/Class Meta Table
-
--- Returns a class that is a child of self
-function Object:extend()
-  local class = {}
-  class.super = self
-  class.__meta = table.copy(self.__meta)
-  return setmetatable(class, class.__meta)
-end
-
---Constructor
-function Object:__init()
-  local newobject = self.super and self.super:__init() or {}
-  newobject.super = self.super
-  newobject.static = self
-  newobject.__meta = {}
-
-  -- Instance Meta Table
-  function Object.__meta.__index(table, key)
-    local static = rawget(table, 'static')
-    return static and key and static[key] or nil
-  end
-  --/Instance Meta Table
-
-  function newobject:tostring()
-    return '::object::'
-  end
-
-  function newobject:instanceof(class)
-    local static = self.static
-    while static do
-      if static == class then
-        return true
-      else
-        static = static.super
-      end
+local Object = {
+  -- Class Meta Table
+  __meta = {
+    __index = function (table, key)
+      local super = rawget(table, 'super')
+      return super and key and super[key] or nil
+    end,
+    __call = function (table, ...)
+      local super = rawget(table, 'super')
+      return table.__init and table:__init(...) or super and super.__init and super:__init(...) or nil
     end
-    return false
+  },
+
+  -- Returns a class that is a child of self
+  extend = function(self)
+    local class = {
+      super = self,
+      __meta = {}
+    }
+    for key, value in pairs(self.__meta) do class.__meta[key] = value end
+    return setmetatable(class, class.__meta)
+  end,
+
+  instanceof = function(self, class)
+    return (self == class) or (self.static == class) or (self.super ~= nil) and self.super:instanceof(class) or false
+  end,
+
+  tostring = function()
+    return '::class::'
+  end,
+
+  --Constructor
+  __init = function(self)
+    local newobject = {
+      super = self.super,
+      static = self,
+
+      -- Instance Meta Table
+      __meta = {
+        __index = function (table, key)
+          local static = rawget(table, 'static')
+          return static and key and static[key] or nil
+        end
+      },
+
+      tostring = function()
+        return '::object::'
+      end
+    }
+    return setmetatable(newobject, newobject.__meta)
   end
-
-  return setmetatable(newobject, self.__meta)
-end
-
+}
 return setmetatable(Object, Object.__meta)
