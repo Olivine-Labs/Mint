@@ -43,7 +43,7 @@ function Object:__init()
   --/Instance Meta Table
 
   function newobject:tostring()
-    return "::object::"
+    return '::object::'
   end
 
   function newobject:instanceof(class)
