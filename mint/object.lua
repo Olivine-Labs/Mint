@@ -8,7 +8,7 @@ end
 
 -- Class Meta Table
 Object.__meta = {}
- 
+
 function Object.__meta.__index(table, key)
   local super = rawget(table, 'super')
   return super and key and super[key] or nil
@@ -34,7 +34,7 @@ function Object:__init()
   newobject.super = self.super
   newobject.static = self
   newobject.__meta = {}
-  
+
   -- Instance Meta Table
   function Object.__meta.__index(table, key)
     local static = rawget(table, 'static')
@@ -45,7 +45,7 @@ function Object:__init()
   function newobject:tostring()
     return "::object::"
   end
-  
+
   function newobject:instanceof(class)
     local static = self.static
     while static do
