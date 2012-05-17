@@ -39,8 +39,17 @@ local Object = {
       __meta = {
         __index = function (table, key)
           local static = rawget(table, 'static')
-          return static and key and static[key] or nil
-        end
+          local keyget = rawget(table, 'get'..key)
+          return keyget or static and key and static['get'..key] or table.__meta.__field[key] or static and key and static[key] or nil
+        end,
+        __newindex = function(table, key, value)
+          if table['set'..key] then
+            table['set'..key](value)
+          else
+            table.__meta.__field[key] = value
+          end
+        end,
+        __field = {}
       },
 
       tostring = function()
